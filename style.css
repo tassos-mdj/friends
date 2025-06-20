@@ -41,6 +41,16 @@ img {
     color: #ffdf00;
 }
 
+button {
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 600;
+    border: none;
+    background-color: lightblue;
+    padding: 1em 2em;
+    box-shadow: 3px 3px gray;
+}
+
 p {
     font-weight: 900;
     font-size: 0.8em;
