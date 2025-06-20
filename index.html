@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Random FRIENDS gif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The Random 
+        <span class="logo">
+            F <span class="red">•</span>
+            R <span class="blue">•</span>
+            I <span class="yellow">•</span>
+            E <span class="red">•</span>
+            N <span class="yellow">•</span>
+            D <span class="blue">•</span>
+            S
+        </span> gif!
+    </h1>
+    <img src="#">
+    <p>© The Mood Booster®</p>
+    <script>
+        const img = document.querySelector('img');
+        fetch('https://api.giphy.com/v1/gifs/translate?api_key=7msu4voikjXUKk9qpk4BMusbjYSxmftn&s=@friends', { mode:"cors" })
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(response) {
+                img.src = response.data.images.original.url;
+            })
+            .catch(e => console.log(e));
+    </script>
+    
+</body>
+</html>

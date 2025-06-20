@@ -1,0 +1,33 @@
+body {
+      background-color: #e6d8e7;
+      display: flex;
+      flex-direction: column;
+      height: 90vh;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-style: italic;
+}
+
+.logo {
+    margin: 0 0.5em;
+    padding: 0.3em;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: turquoise;
+}
+
+.yellow {
+    color: #ffdf00;
+}
